@@ -20,7 +20,6 @@ host_agent=# SELECT cpu_number,id,total_mem
 FROM host_info
 ORDER BY cpu_number ASC, total_mem DESC;
 
-
 --Average used memory in percentage over 5 minutes intervals
 --for each host.( used_memory= total_memory-free_memory)
 SELECT host_info.id as host_id, host_info.hostname, host_info.total_mem as total_memory,
@@ -30,4 +29,3 @@ FROM host_info
 INNER JOIN host_usage ON host_usage.host_id = host_info.id 
 GROUP BY five_min_interval, id
 ORDER BY five_min_interval;
-
