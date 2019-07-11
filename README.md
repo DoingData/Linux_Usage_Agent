@@ -1,7 +1,7 @@
 # Linux_Usage_Agent
 
 ## Introduction
-What does this project do ...
+The Host Agent is an Internal Program that keeps track of hardware specifications and resource usage
 
 
 ## Architecture and Design
