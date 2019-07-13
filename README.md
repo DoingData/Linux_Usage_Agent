@@ -1,8 +1,7 @@
 # Linux_Usage_Agent
 
 ## Introduction
-The Host Agent is an Internal Program that keeps track of hardware specifications and resource usage
-
+**Linux_Host_Agent** is implemented to assist ifrastructure managers for keeping track of hardware specifications and resource usage.It provides them realtime quality data which help them to optimize efficeny and preplan future growth.
 
 ## Architecture and Design
 1) Draw a cluster diagram with three hosts,a DB and agents
@@ -67,6 +66,11 @@ chmod 777 filename
 ```
 
 ## Improvements
+There are several improvements which can be made in this application some of them are listed below.
+1. An Emergency Alarm can be implemented which notify whenever system has reached a critical usage threshhold. Which helps to add more nodes to keep load undercontrol.
+2. More usage statistics coould be logged which helps create better picture of cluster performance.
+3. Automattic report generation can be added for executives for daily,weekly,monthly and yearly basis.
+4. Capability to automatically detect hardware updates and log it can be added.
 
 **Write at least three things you want to improve**
 l1) handle hardware update
