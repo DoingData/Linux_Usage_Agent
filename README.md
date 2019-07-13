@@ -1,16 +1,21 @@
 # Linux_Usage_Agent
 
 ## Introduction
-**Linux_Host_Agent** is implemented to assist ifrastructure managers for keeping track of hardware specifications and resource usage.It provides them realtime quality data which help them to optimize efficeny and preplan future growth.
-
+**Linux_Host_Agent** is implemented to assist infrastructure managers for keeping track of hardware specifications and resource usage. It provides them with realtime quality data which helps to optimize efficiency and preplan future growth.
 ## Architecture and Design
 ![](Linux_Usage_Agent_fig.png)
-1) Draw a cluster diagram with three hosts,a DB and agents
-2) Describe tables (no sql code,just explain their usage)
-3) Describe scripts (no code,just explain their usage)
+
+There are two tables in our database host_info and host_usage
+1. **host_info** contains hardware specifications for each node attached to the cluster.It contains values such as hostname,cpu_number its architecture, cpu model and its speed ,memory size, L2 cache size and timestamp.
+2. **host_usage**  contains each node's performance data. which is being collected every minute. Data values include a timestamp, free memory, CPU idle, CPU kernel, disk input-output.
+
+To gather data and add into above mentioned  tables we have two bash scripts host_info.sh and host_usage.sh 
+host_info.sh is only run once to get the information of the system at start
+host_usage.sh runs every minute using a scheduler in order to collect host usage data and insert it into the database.
+To schedule host_usage run every minute, we create a crontab job which runs the host_usage.sh every minute
 ## Usage
-1) how to init database and tables
-2) `host_info.sh` usage
+1) Script init.sh  initialize database and create tables is postgresql database.
+2) `host_info.sh` 
 3) `host_usage.sh` usage
 4) crontab setup
 
