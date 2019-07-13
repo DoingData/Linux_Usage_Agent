@@ -4,6 +4,7 @@
 **Linux_Host_Agent** is implemented to assist ifrastructure managers for keeping track of hardware specifications and resource usage.It provides them realtime quality data which help them to optimize efficeny and preplan future growth.
 
 ## Architecture and Design
+![](https://drive.google.com/file/d/1lacSVjNZlS_FAzgF-A29YDqi5c_zJ-Qu/view?usp=sharing)
 1) Draw a cluster diagram with three hosts,a DB and agents
 2) Describe tables (no sql code,just explain their usage)
 3) Describe scripts (no code,just explain their usage)
@@ -71,6 +72,7 @@ There are several improvements which can be made in this application some of the
 2. More usage statistics coould be logged which helps create better picture of cluster performance.
 3. Automattic report generation can be added for executives for daily,weekly,monthly and yearly basis.
 4. Capability to automatically detect hardware updates and log it can be added.
+5. SQL Table can be normalized to query data efficently
 
 **Write at least three things you want to improve**
 l1) handle hardware update
