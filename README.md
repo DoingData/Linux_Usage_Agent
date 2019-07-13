@@ -4,7 +4,7 @@
 **Linux_Host_Agent** is implemented to assist ifrastructure managers for keeping track of hardware specifications and resource usage.It provides them realtime quality data which help them to optimize efficeny and preplan future growth.
 
 ## Architecture and Design
-![](https://drive.google.com/file/d/1cUUsBVtJ1_9sSluBwhRBm_ZHZxOfZGf4/view?usp=sharing)
+![](Linux_Usage_Agent_fig.png)
 1) Draw a cluster diagram with three hosts,a DB and agents
 2) Describe tables (no sql code,just explain their usage)
 3) Describe scripts (no code,just explain their usage)
