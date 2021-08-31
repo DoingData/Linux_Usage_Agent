@@ -3,8 +3,8 @@
 ## Introduction
 **Linux_Host_Agent** is implemented to assist infrastructure managers for keeping track of hardware specifications and resource usage. It provides them with realtime quality data which helps to optimize efficiency and preplan future growth.
 ## Architecture and Design
-![](Linux_Usage_Agent_fig.png)
-
+<!--![](Linux_Usage_Agent_fig.png)-->
+![](linux-proj-1.svg)
 There are two tables in our database host_info and host_usage
 1. **host_info** contains hardware specifications for each node attached to the cluster.It contains values such as hostname,cpu_number its architecture, cpu model and its speed ,memory size, L2 cache size and timestamp.
 2. **host_usage**  contains each node's performance data. which is being collected every minute. Data values include a timestamp, free memory, CPU idle, CPU kernel, disk input-output.
